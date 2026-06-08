@@ -35,7 +35,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
     <div id="home-view-container" className="">
       
       {/* 1. Hero Section */}
-      <section id="hero-banner" className="relative bg-slate-950 text-white min-h-[90vh] flex items-center overflow-hidden">
+      <section id="hero-banner" className="relative bg-slate-950 text-white min-h-screen flex items-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
