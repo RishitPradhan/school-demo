@@ -20,6 +20,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
         setIsScrolled(false);
       }
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);

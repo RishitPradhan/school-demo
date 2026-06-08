@@ -56,7 +56,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               alt="School Exterior"
             />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950" />
         </div>
 
         {/* Content Container */}
