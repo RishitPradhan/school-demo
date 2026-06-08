@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import schoolVideo from "../../assets/school-video.mp4";
+import schoolVideo from "../../assets/school-bell-video.mp4";
 import { 
   ArrowRight, 
   Sparkles, 
