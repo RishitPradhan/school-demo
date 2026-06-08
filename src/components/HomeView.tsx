@@ -45,7 +45,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }
     <div id="home-view-container" className="">
       
       {/* 1. Hero Section */}
-      <section id="hero-banner" className="relative bg-slate-950 text-white min-h-screen flex items-center overflow-hidden">
+      <section id="hero-banner" className="relative bg-slate-950 text-white h-[100dvh] flex items-center overflow-hidden">
         {/* Background Video Loop with Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
@@ -131,7 +131,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-5 bg-slate-950/40 border border-white/10 backdrop-blur-md p-5 sm:p-8 rounded-2xl shadow-xl space-y-4 sm:space-y-6"
+            className="hidden md:block lg:col-span-5 bg-slate-950/40 border border-white/10 backdrop-blur-md p-5 sm:p-8 rounded-2xl shadow-xl space-y-4 sm:space-y-6"
           >
             <h3 className="text-lg sm:text-xl font-bold text-white font-display">
               Admission Gateway
