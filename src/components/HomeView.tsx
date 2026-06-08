@@ -44,7 +44,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             loop
             muted
             playsInline
-            className="w-full h-full object-cover object-center opacity-10 select-none pointer-events-none"
+            className="w-full h-full object-cover object-center opacity-30 select-none pointer-events-none"
           >
             <source
               src={schoolVideo}
