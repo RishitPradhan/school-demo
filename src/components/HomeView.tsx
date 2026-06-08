@@ -125,7 +125,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               Admission Gateway
             </h3>
             <p className="text-xs text-slate-400">
-              Complete your initial expression of interest. Our senior admissions counselor will reach back in 24 business hours.
+              Submit your inquiry. We will reply within 24 hours.
             </p>
 
             <div className="space-y-3">
@@ -133,7 +133,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Interactive Portals</h4>
-                  <p className="text-xs text-slate-400">State-of-the-art laboratory networks and individual student tabs.</p>
+                  <p className="text-xs text-slate-400">Advanced science labs and digital learning.</p>
                 </div>
               </div>
 
@@ -141,7 +141,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Certified Global Educators</h4>
-                  <p className="text-xs text-slate-400">Mentors holding advanced educational certifications and research credentials.</p>
+                  <p className="text-xs text-slate-400">Certified, research-active international mentors.</p>
                 </div>
               </div>
 
@@ -149,7 +149,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Full Placement Counseling</h4>
-                  <p className="text-xs text-slate-400">Dedicated desk guiding university placements, portfolio making, and SATs.</p>
+                  <p className="text-xs text-slate-400">Guidance for university placements and SAT prep.</p>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 onClick={() => onNavigateToTab("contact")}
                 className="w-full py-3.5 text-center bg-slate-850 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 rounded-xl text-amber-500 font-semibold text-sm transition-all flex items-center justify-center gap-1.5"
               >
-                Inquire For Campus Tour <ArrowRight className="h-4 w-4" />
+                Book a Campus Tour <ArrowRight className="h-4 w-4" />
               </button>
             </div>
           </motion.div>
