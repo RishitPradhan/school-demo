@@ -40,7 +40,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&auto=format&fit=crop&q=80"
-            className="w-full h-full object-cover object-center opacity-30 select-none"
+            className="w-full h-full object-cover object-center opacity-10 select-none"
             alt="School Exterior"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
@@ -64,7 +64,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] font-display"
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] font-display"
             >
               Empowering Young Minds <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500">for a Global Future</span>
             </motion.h1>
@@ -73,9 +73,9 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-slate-300 max-w-2xl font-light"
+              className="text-sm sm:text-base text-slate-300 max-w-xl font-light leading-relaxed"
             >
-              At Vidwan Global School, we blend rigorous academic standards with advanced technological skills, artistic appreciation, and deep-rooted core human ethics.
+              Blending academic excellence with advanced technology and core human values to nurture the leaders of tomorrow.
             </motion.p>
 
             <motion.div
