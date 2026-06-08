@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import schoolVideo from "../../assets/school-video.mp4";
 import { 
   ArrowRight, 
   Sparkles, 
@@ -46,7 +47,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             className="w-full h-full object-cover object-center opacity-10 select-none pointer-events-none"
           >
             <source
-              src="https://assets.mixkit.co/videos/preview/mixkit-kids-in-a-classroom-writing-in-notebooks-41659-large.mp4"
+              src={schoolVideo}
               type="video/mp4"
             />
             <img
@@ -76,7 +77,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight font-display text-white"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] font-display text-white"
             >
               Empowering Young Minds
             </motion.h1>
@@ -85,9 +86,9 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xs sm:text-sm text-slate-300 max-w-md font-light leading-relaxed"
+              className="text-lg sm:text-xl text-slate-300 max-w-xl font-light leading-relaxed"
             >
-              Blending academic excellence with advanced technology and values.
+              Where wisdom meets excellence.
             </motion.p>
 
             <motion.div
