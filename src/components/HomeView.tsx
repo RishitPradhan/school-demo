@@ -36,13 +36,25 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
       
       {/* 1. Hero Section */}
       <section id="hero-banner" className="relative bg-slate-950 text-white min-h-screen flex items-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&auto=format&fit=crop&q=80"
-            className="w-full h-full object-cover object-center opacity-10 select-none"
-            alt="School Exterior"
-          />
+        {/* Background Video Loop with Overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover object-center opacity-10 select-none pointer-events-none"
+          >
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-kids-in-a-classroom-writing-in-notebooks-41659-large.mp4"
+              type="video/mp4"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&auto=format&fit=crop&q=80"
+              className="w-full h-full object-cover object-center"
+              alt="School Exterior"
+            />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
         </div>
 
@@ -64,18 +76,18 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] font-display"
+              className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight font-display text-white"
             >
-              Empowering Young Minds <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500">for a Global Future</span>
+              Empowering Young Minds
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-sm sm:text-base text-slate-300 max-w-xl font-light leading-relaxed"
+              className="text-xs sm:text-sm text-slate-300 max-w-md font-light leading-relaxed"
             >
-              Blending academic excellence with advanced technology and core human values to nurture the leaders of tomorrow.
+              Blending academic excellence with advanced technology and values.
             </motion.p>
 
             <motion.div
