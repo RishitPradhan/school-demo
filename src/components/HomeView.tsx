@@ -68,7 +68,10 @@ export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }
               alt="School Exterior"
             />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
+          {/* Main cinematic overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent" />
+          {/* Solid top strip that perfectly matches navbar bg — removes any gap on all devices */}
+          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-slate-900 to-transparent" />
         </div>
 
         {/* Content Container */}
