@@ -42,7 +42,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
       id="main-navigation-bar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || isOpen
-          ? "bg-slate-950/85 backdrop-blur-md border-b border-white/5 shadow-lg py-3"
+          ? "bg-slate-950 border-b border-white/5 shadow-lg py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -59,7 +59,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
             </div>
             <div>
               <span className="text-xl font-bold font-display text-white tracking-tight flex items-center gap-1.5">
-                VIDWAN <span className="text-amber-500 font-medium text-xs tracking-wider bg-slate-800 px-2 py-0.5 rounded border border-slate-700">GLOBAL</span>
+                VIDWAN <span className="text-amber-500 font-medium text-xs tracking-wider bg-slate-850 px-2 py-0.5 rounded border border-slate-750">GLOBAL</span>
               </span>
               <p className="text-[10px] text-slate-400 font-mono tracking-widest uppercase -mt-0.5">
                 School of Leaders
@@ -79,7 +79,9 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
                   className={`relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
                     isActive
                       ? "text-amber-500 font-semibold"
-                      : "text-slate-300 hover:text-white hover:bg-slate-800/50"
+                      : isScrolled
+                        ? "text-slate-300 hover:text-white hover:bg-slate-800/50"
+                        : "text-slate-200 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   {item.label}
@@ -107,7 +109,11 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
             <button
               id="desktop-apply-button"
               onClick={onOpenApply}
-              className="relative inline-flex items-center px-4.5 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 hover:from-amber-400 hover:to-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 cursor-pointer shadow-md transition-all active:scale-[0.98] overflow-hidden group"
+              className={`relative inline-flex items-center px-4.5 py-2 text-sm font-semibold rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 cursor-pointer shadow-md transition-all active:scale-[0.98] overflow-hidden group ${
+                isScrolled
+                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 hover:from-amber-400 hover:to-amber-500"
+                  : "bg-white/5 border border-white/20 text-white hover:bg-white/10 hover:border-white/40"
+              }`}
             >
               <span className="relative z-10 flex items-center gap-1.5">
                 Apply Now <Sparkles className="h-4 w-4" />
@@ -128,7 +134,9 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
             <button
               id="mobile-menu-toggle"
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none"
+              className={`p-2 rounded-lg text-slate-300 hover:text-white focus:outline-none transition-colors ${
+                isScrolled || isOpen ? "hover:bg-slate-800" : "hover:bg-white/10"
+              }`}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
