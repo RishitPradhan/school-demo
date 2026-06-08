@@ -1,0 +1,6 @@
+{
+  "name": "Vidwan Global School",
+  "description": "Official website of Vidwan Global School, fostering academic excellence and empowering young minds for a global future.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
