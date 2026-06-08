@@ -119,7 +119,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-5 bg-slate-900/90 border border-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl space-y-6"
+            className="lg:col-span-5 bg-slate-950/40 border border-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl space-y-6"
           >
             <h3 className="text-xl font-bold text-white font-display">
               Admission Gateway
@@ -129,7 +129,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             </p>
 
             <div className="space-y-3">
-              <div className="flex items-start gap-3 bg-slate-850 p-3.5 rounded-xl border border-slate-805">
+              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Interactive Portals</h4>
@@ -137,7 +137,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 bg-slate-850 p-3.5 rounded-xl border border-slate-805">
+              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Certified Global Educators</h4>
@@ -145,7 +145,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 bg-slate-850 p-3.5 rounded-xl border border-slate-805">
+              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-white">Full Placement Counseling</h4>
@@ -158,7 +158,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               <button
                 id="hero-card-inquiry"
                 onClick={() => onNavigateToTab("contact")}
-                className="w-full py-3.5 text-center bg-slate-850 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 rounded-xl text-amber-500 font-semibold text-sm transition-all flex items-center justify-center gap-1.5"
+                className="w-full py-3.5 text-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-amber-500 hover:text-amber-400 font-semibold text-sm transition-all flex items-center justify-center gap-1.5"
               >
                 Book a Campus Tour <ArrowRight className="h-4 w-4" />
               </button>
