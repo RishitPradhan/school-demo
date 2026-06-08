@@ -45,9 +45,9 @@ export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }
     <div id="home-view-container" className="">
       
       {/* 1. Hero Section */}
-      <section id="hero-banner" className="relative bg-slate-950 text-white h-[100dvh] flex items-center overflow-hidden">
+      <section id="hero-banner" className="relative bg-slate-900 text-white h-[100dvh] flex items-center overflow-hidden">
         {/* Background Video Loop with Overlay */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute -top-2 bottom-0 left-0 right-0 z-0 overflow-hidden">
           <video
             autoPlay
             loop
@@ -56,7 +56,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }
             preload="auto"
             onLoadedData={() => setVideoReady(true)}
             onCanPlay={() => setVideoReady(true)}
-            className="w-full h-full object-cover object-center select-none pointer-events-none"
+            className="block w-full h-full object-cover object-top select-none pointer-events-none"
           >
             <source
               src={schoolVideo}
