@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion } from "motion/react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import schoolVideo from "../../assets/school-bell-video.mp4";
 import { 
   ArrowRight, 
@@ -12,17 +12,26 @@ import {
   ChevronRight, 
   Star,
   Quote,
-  ChevronLeft
+  ChevronLeft,
+  GraduationCap
 } from "lucide-react";
 import { STATS, CORE_VALUES, TESTIMONIALS } from "../data";
 
 interface HomeViewProps {
   onNavigateToTab: (tab: string) => void;
   onOpenApply: () => void;
+  onVideoLoaded?: () => void;
 }
 
-export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps) {
+export default function HomeView({ onNavigateToTab, onOpenApply, onVideoLoaded }: HomeViewProps) {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    if (videoReady && onVideoLoaded) {
+      onVideoLoaded();
+    }
+  }, [videoReady, onVideoLoaded]);
 
   const nextTestimonial = () => {
     setActiveTestimonial((prev) => (prev + 1) % TESTIMONIALS.length);
@@ -44,6 +53,9 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             loop
             muted
             playsInline
+            preload="auto"
+            onLoadedData={() => setVideoReady(true)}
+            onCanPlay={() => setVideoReady(true)}
             className="w-full h-full object-cover object-center select-none pointer-events-none"
           >
             <source
