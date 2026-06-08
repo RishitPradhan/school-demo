@@ -121,7 +121,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenApply }: NavbarP
             <button
               id="mobile-apply-button-quick"
               onClick={onOpenApply}
-              className="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 shadow"
+              className="hidden sm:inline-block px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 shadow"
             >
               Apply
             </button>

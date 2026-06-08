@@ -60,9 +60,9 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-36 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-36 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] font-display text-white"
+              className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] font-display text-white"
             >
               Empowering Young Minds
             </motion.h1>
@@ -86,7 +86,7 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg sm:text-xl text-slate-300 max-w-xl font-light leading-relaxed"
+              className="text-base sm:text-xl text-slate-300 max-w-xl font-light leading-relaxed"
             >
               Where wisdom meets excellence.
             </motion.p>
@@ -95,19 +95,19 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 sm:pt-4"
             >
               <button
                 id="hero-primary-cta"
                 onClick={onOpenApply}
-                className="px-8 py-4 rounded-xl font-bold text-center bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 hover:shadow-lg hover:shadow-amber-500/10 transform hover:-translate-y-0.5 transition-all cursor-pointer"
+                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold text-center bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 hover:shadow-lg hover:shadow-amber-500/10 transform hover:-translate-y-0.5 transition-all cursor-pointer text-sm sm:text-base"
               >
                 Enroll Your Child Now
               </button>
               <button
                 id="hero-secondary-cta"
                 onClick={() => onNavigateToTab("academics")}
-                className="px-8 py-4 rounded-xl font-bold bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 hover:border-slate-600 hover:shadow-md transform hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-1.5"
+                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 hover:border-slate-600 hover:shadow-md transform hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-1.5 text-sm sm:text-base"
               >
                 Explore Curriculums <ArrowRight className="h-4 w-4" />
               </button>
@@ -119,46 +119,46 @@ export default function HomeView({ onNavigateToTab, onOpenApply }: HomeViewProps
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-5 bg-slate-950/40 border border-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl space-y-6"
+            className="lg:col-span-5 bg-slate-950/40 border border-white/10 backdrop-blur-md p-5 sm:p-8 rounded-2xl shadow-xl space-y-4 sm:space-y-6"
           >
-            <h3 className="text-xl font-bold text-white font-display">
+            <h3 className="text-lg sm:text-xl font-bold text-white font-display">
               Admission Gateway
             </h3>
             <p className="text-xs text-slate-400">
               Submit your inquiry. We will reply within 24 hours.
             </p>
 
-            <div className="space-y-3">
-              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
-                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+            <div className="space-y-2.5 sm:space-y-3">
+              <div className="flex items-start gap-2.5 sm:gap-3 bg-white/5 p-3 rounded-xl border border-white/5 backdrop-blur-sm">
+                <CheckCircle2 className="h-4.5 w-4.5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Interactive Portals</h4>
-                  <p className="text-xs text-slate-400">Advanced science labs and digital learning.</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-white">Interactive Portals</h4>
+                  <p className="text-xs text-slate-400 hidden sm:block mt-0.5">Advanced science labs and digital learning.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
-                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 sm:gap-3 bg-white/5 p-3 rounded-xl border border-white/5 backdrop-blur-sm">
+                <CheckCircle2 className="h-4.5 w-4.5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Certified Global Educators</h4>
-                  <p className="text-xs text-slate-400">Certified, research-active international mentors.</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-white">Certified Global Educators</h4>
+                  <p className="text-xs text-slate-400 hidden sm:block mt-0.5">Certified, research-active international mentors.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/5 backdrop-blur-sm">
-                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 sm:gap-3 bg-white/5 p-3 rounded-xl border border-white/5 backdrop-blur-sm">
+                <CheckCircle2 className="h-4.5 w-4.5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Full Placement Counseling</h4>
-                  <p className="text-xs text-slate-400">Guidance for university placements and SAT prep.</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-white">Full Placement Counseling</h4>
+                  <p className="text-xs text-slate-400 hidden sm:block mt-0.5">Guidance for university placements and SAT prep.</p>
                 </div>
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-1.5 sm:pt-2">
               <button
                 id="hero-card-inquiry"
                 onClick={() => onNavigateToTab("contact")}
-                className="w-full py-3.5 text-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-amber-500 hover:text-amber-400 font-semibold text-sm transition-all flex items-center justify-center gap-1.5"
+                className="w-full py-3 text-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-amber-500 hover:text-amber-400 font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-1.5"
               >
                 Book a Campus Tour <ArrowRight className="h-4 w-4" />
               </button>
